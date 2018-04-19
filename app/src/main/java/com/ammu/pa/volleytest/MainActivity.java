@@ -71,25 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("onLoadIntoListView", jsonKeys[i] +" :: " + jsonVals[i] + "::" + imageIds[i]);
                         i++;
                     }
-                    //ArrayAdapter <String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, jsonKeys);
-
-                    /*
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            CustomListAdapter myAdapter = new CustomListAdapter(MainActivity.this, jsonKeys, jsonVals, imageIds);
-                            //myAdapter.printVal();
-                            ListView listView = findViewById(R.id.listView);
-                            listView.setAdapter(myAdapter);
-                            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                @Override
-                                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-                                }
-                            });
-                        }
-                    });*/
+                    
 
                     CustomListAdapter myAdapter = new CustomListAdapter(MainActivity.this, jsonKeys, jsonVals, imageIds);
                     //myAdapter.printVal();
